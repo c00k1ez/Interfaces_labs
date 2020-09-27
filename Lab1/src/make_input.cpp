@@ -9,7 +9,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-	if(argc == 1 || argc == 2)
+	if(argc != 5)
 	{
 		cout << "Do not enough arguments.\nUse Command ./make_input --bits [YOUR_12_BITS] --output_file [FILE_NAME]." << endl;
 		return -1;

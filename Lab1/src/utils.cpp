@@ -102,10 +102,11 @@ void generate_package(DataBunch &data, const vector<bool> &bits)
 	data.package[1][0] = 0; data.package[1][1] = 1;
 	data.package[2][0] = 1; data.package[2][1] = 0;
 	data.package[3][0] = 1; data.package[3][1] = 1;
-	vector<bool> temp_vec(6, 0);
 
 	for(int i = 0; i < 4; i ++)
 	{
+		vector<bool> temp_vec(6, 0);
+		
 		for(int j = 0; j < 3; j ++)
 		{
 			temp_vec[j] = bits[j + i*3];
